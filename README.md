@@ -1,8 +1,6 @@
 # WebhookProcessor
 
-**TODO: Add description**
-
-https://medium.com/@jonlunsford/elixir-building-a-small-json-endpoint-with-plug-cowboy-and-poison-f4bb40c23bf6
+Simple web server using cowboy and plug
 
 ## Installation
 
@@ -12,8 +10,10 @@ by adding `webhook_processor` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:webhook_processor, "~> 0.1.0"}
-  ]
+    # This will pull in Plug AND Cowboy
+    {:plug_cowboy, "~> 2.5"},
+    {:poison, "~> 5.0"}
+  ] 
 end
 ```
 

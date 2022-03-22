@@ -45,8 +45,8 @@ defmodule WebhookProcessor.EndpointTest do
 
     assert %Person{} = person = Poison.decode!(conn.resp_body, as: %Person{})
 
-    assert "Eric" == person.name
-    assert 62 = person.age
+    assert "Mr Foo" == person.name
+    assert 43 = person.age
   end
 
   test "it returns 422 with an invalid payload" do

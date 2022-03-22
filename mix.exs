@@ -23,9 +23,8 @@ defmodule WebhookProcessor.MixProject do
   defp deps do
     [
       # This will pull in Plug AND Cowboy
-      {:plug_cowboy, "~> 2.0"},
-      # Latest version as of this writing
-      {:poison, "~> 3.1"}
+      {:plug_cowboy, "~> 2.5"},
+      {:poison, "~> 5.0"}
     ]
   end
 end

@@ -30,7 +30,7 @@ defmodule WebhookProcessor.Endpoint do
   end
 
   get "/person" do
-    person = %Person{name: "Eric", age: 62}
+    person = %Person{name: "Mr Foo", age: 43}
 
     conn
     |> put_resp_content_type("application/json")

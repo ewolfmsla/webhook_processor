@@ -24,3 +24,5 @@ webhook_processor-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+readme.txt
